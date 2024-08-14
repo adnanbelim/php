@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+/* Defines variable and padding & margin classes */
+
+:root {
+    --color-1: #4542AA;
+    --color-y: yellow;
+    --color-r: red;
+    --color-b: #000;
+    --color-blue: #5E5ACA;
+    --color-grey: #f5f3f4;
+    --color-grey1: #edede9;
+    --color-brown: #a27035;
+}
+
+.m-10 {
+    margin-top: 100px;
+}
+
+.m-11 {
+    margin-top: 110px;
+}
+
+.mb-10 {
+    margin-bottom: 100px;
+}
+
+.m-15 {
+    margin-top: 150px;
+}
+
+.m-20 {
+    margin-top: 200px;
+}
+
+.my-15 {
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.py-11 {
+    padding-top: 200px;
+}
+
+.px-6 {
+    padding-left: 55px;
+}
+
+.py-10 {
+    padding-bottom: 100px;
+}
+
+.h-150 {
+    height: 125vh;
+}
+
+/* head css================================================================== */
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media only screen and (max-width: 480px) {
+    body,html{
+        overflow-x: hidden;
+        width: 100%;
+        
+        margin: 0;
+        padding: 0;
+    }
+    .variety-img{
+        height: 300px !important;
+    }
+}
+
+.navbar,
+.footer {
+    background-color: var(--color-brown);
+}
+
+.nav-item {
+    padding-right: 10px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+.navbar-nav > li > .nav-link{
+    color: #fff;
+}
+.active{
+    color: rgb(210, 243, 22) !important;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    border: 1px solid brown;
+    background-color: brown;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.icon-span {
+    text-decoration: none;
+}
+
+/* Button classes============================================================ */
+
+.button:hover {
+    color: black;
+}
+
+.button {
+    width: 200px;
+}
+
+/* Main Section============================================================== */
+
+.main-bg {
+    background-image: url('../img/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.brown {
+    color: brown;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.brown1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.size {
+    margin: 20px 0 20px 0;
+    width: 120px;
+    height: 120px;
+}
+
+/* First Shapedivider */
+
+.custom-shape-divider-bottom-1717069411 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1717069411 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 81px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1717069411 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.pixcap {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Menu Section============================================================== */
+
+.bg-gray {
+    background: linear-gradient(rgba(95, 93, 93, 0.7), var(--color-grey));
+    position: relative;
+}
+
+/* Second divider */
+
+.custom-shape-divider-top-1718443540 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1718443540 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 65px;
+}
+
+.custom-shape-divider-top-1718443540 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Third Divider */
+
+.custom-shape-divider-top-1718472572 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1718472572 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-top-1718472572 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Variety Section=========================================================== */
+
+.cafe-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.5)), url('../img/about-back-2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Variety-section {
+    transition: ease-in-out 0.2s;
+
+}
+
+.Variety-section:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+.variety-img {
+    height: 400px;
+    
+}
+
+.cafe-img {
+    filter: drop-shadow(1px 5px 5px black);
+    width: 100%;
+
+}
+
+.cafe-img1 {
+    filter: drop-shadow(1px 5px 5px black);
+    width: 100%;
+    height: 180px;
+}
+
+.cafe-img2 {
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.cafe-img3 {
+    height: 200px;
+    filter: drop-shadow(1px 5px 5px black);
+    width: 100%;
+}
+
+/* Member Section======================================================== */
+
+.team {
+    position: relative;
+    background-color: var(--color-grey1);
+}
+
+/* Fourth Divider*/
+
+.custom-shape-divider-bottom-1718473066 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718473066 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 61px;
+}
+
+.custom-shape-divider-bottom-1718473066 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* Gify Section======================================================= */
+
+.gif {
+    height: 50px;
+    width: 50px;
+}
+
+.gif-link {
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    background-color: white;
+}
+
+/* login form ========================================================== */
+
+.login-form {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.4)), url('../img/about-back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: var(--color-brown);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.form_container {
+    margin-top: 100px;
+}
+
+.login_btn {
+    width: 100%;
+    background: #bb6b0e !important;
+    color: white !important;
+    border: 0.5px solid #fff !important;
+}
+
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    background: #bb6b00 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    border: 0.5px solid #fff !important;
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+
+/* My animation================================================================== */
+
+/* main-image-cup */
+
+.pixcap {
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+/* Cicle image */
+
+
+.brand_logo {
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* variety Page================================================================== */
+
+.variety-divider {
+    position: relative;
+    background-color: var(--color-grey1);
+}
+
+.custom-shape-divider-top-1718539069 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1718539069 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 83px;
+}
+
+.custom-shape-divider-top-1718539069 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Carausel================================================ */
+
+
+.carousel-indicators {
+    margin-bottom: -50px !important;
+}
+
+.carousel-indicators button {
+    height: 1.6rem !important;
+    border-radius: 100% !important;
+    width: 1.6rem !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-grey1);
+    border-radius: 50px;
+    padding: 10px;
+}
+ 
+/* Payment===================================================== */
+
+.payment-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.payment-cont form {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.payment-cont form .payment-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.payment-cont form .payment-row .payment-col {
+    flex: 1 1 250px;
+}
+
+.payment-col .title {
+    font-size: 20px;
+    color: rgb(237, 55, 23);
+    padding-bottom: 5px;
+}
+
+.payment-col .inputBox {
+    margin: 15px 0;
+}
+
+.payment-col .inputBox label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.payment-col .inputBox input,
+.payment-col .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.payment-col .inputBox input:focus,
+.payment-col .inputBox select:focus {
+    border: 1px solid #000;
+}
+
+.payment-col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-col .flex .inputBox {
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.payment-col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.payment-cont form .submit_btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: rgb(1, 143, 34);
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.payment-cont form .submit_btn:hover {
+    background: #3d17fb;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}

@@ -1,0 +1,560 @@
+     /* About us animation */
+     .fade-in {
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeIn 2s ease-in-out forwards; /* Apply the animation */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+/* end */
+
+
+/* icons */
+    @keyframes floatUp {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+
+    .balloon {
+        animation: floatUp 2s infinite ease-in-out; /* Apply the balloon animation */
+    }
+
+    .stack {
+        perspective: 1000px; /* Set perspective to create a 3D space for the stacking effect */
+    }
+
+    .stacked-card {
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transition: transform 0.5s; /* Add a smooth transition effect */
+        animation: slideIn 0.8s ease-out; /* Add a sliding animation */
+        transition: all ease 0.10s;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .stacked-card:nth-child(2) {
+        animation-delay: 0.4s; /* Delay for the second card */
+    }
+
+    .stacked-card:nth-child(3) {
+        animation-delay: 0.8s; /* Delay for the third card */
+    
+    }
+
+    .stacked-card:nth-child(4) {
+        animation-delay: 0.6s; /* Delay for the third card */
+    
+    }
+
+    /* end */
+
+    /* scale animaruion */
+    @keyframes continuousScale {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2); /* Adjust the scale factor as needed */
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .continuous-scale {
+        animation: continuousScale 3s infinite ease-in-out;
+    }
+/* end */
+
+
+        /* Custom styling for navigation buttons */
+
+
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        
+        .owl-prev,
+        .owl-next {
+            font-size: 24px;
+            color: #fff;
+            background: #000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .owl-prev:hover,
+        .owl-next:hover {
+            background: #333;
+        }
+        
+        .owl-prev {
+            left: 10%;
+        }
+        
+        .owl-next {
+            left: 85%;
+        }
+
+        /* Gallary */
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #ccc;
+} */
+.container {
+  padding: 10px;
+  min-height: 700px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images div {
+  position: relative;
+}
+.images div span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  display: none;
+  place-items: center;
+  color: #fff;
+}
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  font-size: 25px;
+  cursor: pointer;
+}
+.modal-content {
+  min-height: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.modal-content img.show {
+  opacity: 1;
+}
+.modal-txt {
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.modal-nav {
+  padding: 10px 5px;
+}
+
+.modal-nav button {
+  padding: 5px;
+  width: 100px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.modal-nav button:hover {
+  background-color: teal;
+}
+
+.show {
+  display: grid;
+}
+
+.event{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    height: 1000px;
+}
+
+.list{
+
+ display: block;
+ text-align: left;
+}
+
+
+/* Crausal CSS */
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.carousel1 {
+    height: 500px;
+    width: 600px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.carousel__controls,
+.carousel__activator {
+    display: none;
+}
+
+.carousel__activator:checked~.carousel__track {
+    animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+    0%, 20% {
+        transform: translateX(0%);
+    }
+
+    25%, 45% {
+        transform: translateX(-100%);
+    }
+
+    50%, 70% {
+        transform: translateX(-200%);
+    }
+
+    75%, 95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.carousel__slide {
+    height: 100%;
+    position: absolute;
+    overflow-y: auto;
+    opacity: 0;
+}
+
+.carousel__slide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    color: #fafafa;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.carousel__track {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease 0s;
+}
+
+.carousel__track .carousel__slide {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.carousel__track .carousel__slide:nth-of-type(1) {
+    transform: translateX(0%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(2) {
+    transform: translateX(100%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(3) {
+    transform: translateX(200%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(4) {
+    transform: translateX(300%);
+}
+
+.carousel__track .carousel__slide:nth-of-type(5) {
+    transform: translateX(400%);
+}
+
+
+
+/* Styling Text and Button */
+.btn{
+  background-color: #134611;
+  color: white;
+}
+
+.btn1{
+  font-size: 12px ;
+}
+.btn:hover{
+  background-color: #3e8914;
+}
+
+.btn1:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.para{
+  color: #000;
+  margin-bottom: 50px;
+  line-height: 40px;
+}
+
+/* Education */
+
+.part{
+  display: block;
+
+  width: 100%;
+  align-items: center;
+ 
+}
+
+/* .div1{
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+
+.div2{
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  margin-right: 20px;
+} */
+
+.heading{
+  color: #134611;
+}
+
+
+.collapse{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width:968px){
+  .collapse{
+    display: block;
+
+    justify-content: center;
+  }
+  
+}
+
+.education-content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event{
+  display: block;
+  margin: 20px auto;
+  
+  width: 100%;
+  height: 25%;
+}
+
+
+@media only screen and (max-width:576px){
+
+ 
+  .images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:440px){
+
+ 
+  .images {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      overflow: hidden;
+    }
+}
+
+
+/* PopUp */
+
+  /* Add this style to your existing CSS */
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Center the modal horizontally */
+    padding-top: 100px;
+    
+  }
+
+  .modal-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; /* Center the image horizontally */
+    transition: opacity 0.3s;
+   
+  }
+
+  .modal-txt {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background: #333;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2; /* Ensure the close button appears above the modal content */
+  }
+
+ @media only screen and (max-width:480px){
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #ffffff;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 2; /* Ensure the close button appears above the modal content */
+    }
+  }
+
+  @media only screen and (max-width:768px){
+
+  .footer-frame{
+    display: none;
+  
+  }
+  }
+
+  .home-content{
+    font-size: 24px;
+    line-height: 55px;
+  }
+
+  @media only screen and (max-width: 1080px){
+
+    .home-content{
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .remove{
+      display: none;
+    } 
+    }
+
+    @media only screen and (max-width: 720px) and (min-width: 400px){
+      .home-content{
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+    }
+
+  
+
